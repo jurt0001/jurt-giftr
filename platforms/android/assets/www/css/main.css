@@ -1,0 +1,65 @@
+/* 
+
+file: css.main 
+author: Christian Jurt
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oxygen');
+
+*{
+    /**padding: 0;
+    margin: 0;
+    box-sizing: border-box; **/
+}
+:root{
+    font-size: calc(1.5vh + 1.5vw + 1vmin);
+}
+body{
+    font-size: 1.0rem;
+    height: 100vh;
+    background-color: cornsilk;
+    font-family: 'Oxygen', Lucida Grande,  sans-serif;
+}
+
+
+span.name{
+    float:left;
+    width: 60%;
+    font-size: 0.9rem;
+    /**padding: 0.5rem 0;
+    margin: 0; **/
+    overflow: hidden;
+    color: #333;
+}
+span.dob{
+    font-size: 0.7rem;
+    color: #666;
+}
+.midline{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+#giftH3, #birthdays{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+ 
+}
+
+.ideaTitle{
+    
+    font-weight: 700;
+    color: black;
+    font-size: 0.9rem;
+}
+
+#gift-list-p{
+    text-align: center;
+}
+
+
+
+

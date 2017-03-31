@@ -1,0 +1,77 @@
+<!--gifts.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca  'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="css/ratchet.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Giftr</title>
+        
+    </head>
+<body>
+    <header class="bar bar-nav">
+  <a href="people.html"class="icon icon-left-nav pull-left"></a>
+  <a href="#giftModal" class="icon icon-compose pull-right"></a>
+<!--  <a class="icon icon-compose pull-right"></a>-->
+  <h1 class="title">Title</h1> 
+    </header>
+    
+<!--Gift List-->
+    <div id = giftList>
+    <ul class="table-view">
+  <li class="table-view-cell media">
+    <a class="navigate-right">
+      <span class="media-object pull-left icon icon-trash"></span>
+      <div class="media-body">
+        Item 1
+      </div>
+    </a>
+  </li>
+</ul>
+    </div>
+    
+    
+<!--Modal add Gift-->
+<div id="giftModal" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#giftModal"></a>
+                <h1 class="title">Person Edit/Add</h1>
+            </header>
+
+            <div class="content">
+                <div class="content-padded">
+                    <form class="input-group">
+                        <div class="input-row">
+                            <label>Gift idea</label>
+                            <input type="text" placeholder="Bucket"/>
+                        </div>
+                        <div class="input-row">
+                            <label>From Where?</label>
+                            <input type="text" placeholder="https://kijiji.com"/>
+                        </div>
+                        <div class="input-row">
+                            <label>How Much?</label>
+                            <input type="text" placeholder="$49.99"/>
+                        </div>
+                    </form>
+                    <p class="content-padded">
+                        <a href="#giftModal" class="btn btn-block">
+                            <span class="icon icon-close"></span>
+                            Cancel <!-- dispatch click to the close button -->
+                        </a>
+                        <a href="#giftModal" class="btn btn-primary btn-block">
+                            <span class="icon icon-check"></span>
+                            Save  <!-- process the info then dispatch click to the close button -->
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
